@@ -29,8 +29,8 @@
 |Derivative|Integral|
 |:--------|:------|
 |<img src="https://latex.codecogs.com/gif.latex?\frac{d}{dx}\left(x^{2}\sin{\left(x\right)}\right)=x^{2}\cos{\left(x\right)}+2x\sin{\left(x\right)}" />|<img src="https://latex.codecogs.com/gif.latex?{\int}x^{2}\sin{\left(x\right)}\,dx=-x^{2}\cos{\left(x\right)}+2x\sin{\left(x\right)}+2\cos{\left(x\right)}+C" />|
-|<img src="https://latex.codecogs.com/gif.latex?\frac{d}{dx}\left(x^{2}e^{x}\right)=x^{2}e^{x}+2xe^{x}" />|<img src="https://latex.codecogs.com/gif.latex?\int x^{2}e^{x}\,dx=\left(x^{2}-2x+2\right)e^{x}+C" />|
-|<img src="https://latex.codecogs.com/gif.latex?\frac{d}{dx}\left(x^{2}\log{\left(x\right)}\right)=2x\log{\left(x\right)}+x" />|<img src="https://latex.codecogs.com/gif.latex?\int x^{2}\log{\left(x\right)}\,dx=\frac{x^{3}}{3}\log{\left(x\right)}-\frac{x^{3}}{9}+C" />|  
+|<img src="https://latex.codecogs.com/gif.latex?\frac{d}{dx}\left(x^{2}e^{x}\right)=x^{2}e^{x}+2xe^{x}" />|<img src="https://latex.codecogs.com/gif.latex?{\int}x^{2}e^{x}\,dx=\left(x^{2}-2x+2\right)e^{x}+C" />|
+|<img src="https://latex.codecogs.com/gif.latex?\frac{d}{dx}\left(x^{2}\log{\left(x\right)}\right)=2x\log{\left(x\right)}+x" />|<img src="https://latex.codecogs.com/gif.latex?{\int}x^{2}\log{\left(x\right)}\,dx=\frac{x^{3}}{3}\log{\left(x\right)}-\frac{x^{3}}{9}+C" />|  
 
 
 ### 日本語の処理

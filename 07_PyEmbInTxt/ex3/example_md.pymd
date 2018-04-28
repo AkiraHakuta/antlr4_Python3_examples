@@ -10,9 +10,8 @@ This is COMMENT.
 import math
 
 def md_mathexpr(expr):
-    expr1 = expr.replace('\\int ', '\\int~')
+    expr1 = expr.replace('\\int ', '{\\int}')
     expr1 = expr1.replace(' ', '')
-    expr1 = expr1.replace('\\int~', '\\int ')
     return '<img src="https://latex.codecogs.com/gif.latex?' + expr1 + '" />' # for GitHub (Atom editor)
     #return '$$' + '\\displaystyle ' + expr1 + '$$'# Python comment
     #return '[tex:{' + '\\displaystyle ' + expr1 + '}]'
