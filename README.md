@@ -39,9 +39,10 @@ The following command creates Python lexer and parser.
 
 ```
 > cd C:\...\simpleExpr1
-> antlr4
+> antlr4py3 SimpleExpr1.g4
 ```
-test_SimpleExpr1.py 
+test_SimpleExpr1.py  
+
 ```  
 from antlr4 import *
 from SimpleExpr1Lexer import SimpleExpr1Lexer
@@ -89,8 +90,6 @@ print(beautify_lisp_string(lisp_tree_str))
 test1.expr
 ```  
 10+123*3
-```
-py3 SimpleExpr1.g4
 ```
 ```
 > python.exe test_SimpleExpr1.py
