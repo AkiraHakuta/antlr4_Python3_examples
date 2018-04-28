@@ -1,4 +1,4 @@
-//antlr4py3 SimpleExpr2.g4
+// antlr4py3 SimpleExpr2.g4
 
 grammar SimpleExpr2;
 
