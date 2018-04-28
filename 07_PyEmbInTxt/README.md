@@ -268,7 +268,7 @@ Released under the MIT license
 
 - class  TokenStreamRewriter  
   Python のコードはどうもうまく動きません。  
-  java のコードと比較し、手を加えました。  
+  Java のコードと比較し、手を加えました。  
   class MyTokenStreamRewriter(TokenStreamRewriter) を作り、  
   def \_reduceToSingleOperationPerIndex(self, rewrites) を override 。  
   class  TokenStreamRewriter については不明な点が多くありますが、  
