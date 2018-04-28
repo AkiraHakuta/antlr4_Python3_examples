@@ -217,7 +217,8 @@ Released under the MIT license
     
   **PythonTexとの比較**   
   PythonTeX  ( included in TeX Live , W32TeX )  なるツールがあります。  
-  マクロがを使うことができますが、3回 compile する必要があります。  
+  マクロを使うことができます。  
+  しかし、3回 compile しなければなりません。  
   test1.tex  
   ```
   \documentclass[pdflatex]{article}
