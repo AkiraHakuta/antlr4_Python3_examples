@@ -164,7 +164,8 @@ optional arguments:
      `\pycode{year=1901/code} ///This is LINE_COMMENT.....century is the year \pycode{print(year)/code}`  
      にmatch してしまいます。  
      こんな簡単な文法でPython code を認識することができます。  
-     `> antlr4py3 PyEmbInTxt.g4 -o gen` で Python の lexer, parser, ... をgen の中に生成します。  
+     `> antlr4py3 PyEmbInTxt.g4 -o gen`   
+     で Python の lexer, parser, ... をgen の中に生成します。  
      既に、生成した lexer, parser, ... がこのfolder の中に入っていますので、  
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
@@ -248,7 +249,7 @@ optional arguments:
   ```
 - ex3 example\_markdown   
   markdown の使用例です。    
-  数式処理 SymPy を使っています。　　
+  数式処理 SymPy を使っています。  　
   関心のない方は、その部分を削除して下さい。  
   markdown には「方言」がいくつかあります。  
   この例は GitHub に従っています。   
