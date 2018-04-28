@@ -160,34 +160,10 @@ class SimpleExpr2Listener(ParseTreeListener):
     # Exit a parse tree produced by SimpleExpr2Parser#stat.
     def exitStat(self, ctx:SimpleExpr2Parser.StatContext):
         pass
-
-
-    # Enter a parse tree produced by SimpleExpr2Parser#Add.
-    def enterAdd(self, ctx:SimpleExpr2Parser.AddContext):
-        pass
-
-    # Exit a parse tree produced by SimpleExpr2Parser#Add.
-    def exitAdd(self, ctx:SimpleExpr2Parser.AddContext):
-        pass
-
-
-    # Enter a parse tree produced by SimpleExpr2Parser#Expo.
-    def enterExpo(self, ctx:SimpleExpr2Parser.ExpoContext):
-        pass
-
-    # Exit a parse tree produced by SimpleExpr2Parser#Expo.
-    def exitExpo(self, ctx:SimpleExpr2Parser.ExpoContext):
-        pass
-
-
-    # Enter a parse tree produced by SimpleExpr2Parser#Mult.
-    def enterMult(self, ctx:SimpleExpr2Parser.MultContext):
-        pass
-
-    # Exit a parse tree produced by SimpleExpr2Parser#Mult.
-    def exitMult(self, ctx:SimpleExpr2Parser.MultContext):
-        pass
-
+        
+     .......
+     .......
+     .......
 
     # Enter a parse tree produced by SimpleExpr2Parser#Int.
     def enterInt(self, ctx:SimpleExpr2Parser.IntContext):
