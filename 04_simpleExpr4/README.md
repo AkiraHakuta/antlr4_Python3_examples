@@ -129,7 +129,7 @@ Add: 10 + 369 = 379
 result =  379
 ```
 
-下記 (SimpleExpr4.g4)  のように、各parser rule に locals[result],  locals[value] を挿入すると、    
+下記 (SimpleExpr4.g4)  のように、各 parser rule に locals[result],  locals[value] を挿入すると、    
 
 ```
 stat locals[result] // or returns[result]
