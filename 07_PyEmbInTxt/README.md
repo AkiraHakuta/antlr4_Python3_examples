@@ -171,14 +171,14 @@ Released under the MIT license
   (1).  grammar PyEmbInTxt.g4  
      `PYCODE : '\\pycode{' .*? '/code}' ;` のように ? がついていると、最短の文字列に    
      `\pycode{year=1901/code} `と`\pycode{print(year)/code}`     
-     にmatch します。  
+     に match します。  
      ? を取って `\PYCODE : '\\pycode{' .* '/code}' ;`  とすると、最長の文字列   
      `\pycode{year=1901/code} ///This is LINE_COMMENT.....century is the year \pycode{print(year)/code}`  
-     にmatch してしまいます。  
-     こんな簡単な文法でPython code を認識することができます。  
+     に match してしまいます。  
+     こんな簡単な文法で Python code を認識することができます。  
      `> antlr4py3 PyEmbInTxt.g4 -o gen`   
-     で Python の lexer, parser, ... をgen の中に生成します。  
-     既に、生成した lexer, parser, ... がこのfolder の中に入っていますので、  
+     で Python の lexer, parser, ... を gen の中に生成します。  
+     既に、生成した lexer, parser, ... がこの folder の中に入っていますので、  
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
   (2).  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`    
@@ -217,10 +217,8 @@ Released under the MIT license
     
   **PythonTexとの比較**   
   PythonTeX  ( included in TeX Live , W32TeX )  なるツールがあります。  
-  マクロが使えます。  
-  次のように 3回 compile する必要があります。  
-  test1.tex  
-
+  マクロが使えますが、3回 compile する必要があります。  
+  test1.tex  
   ```
   \documentclass[pdflatex]{article}
 
