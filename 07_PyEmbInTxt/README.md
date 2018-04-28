@@ -239,7 +239,7 @@ Released under the MIT license
    ```
 
 
-  PyEmbInTxt  では 、マクロが使えないので、 
+  PyEmbInTxt  では 、マクロが使えないので、   
   test2.texpy  
 
   ```
