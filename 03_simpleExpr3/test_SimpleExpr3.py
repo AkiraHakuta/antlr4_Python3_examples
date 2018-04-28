@@ -51,7 +51,7 @@ class Calc(SimpleExpr3Visitor):
         return right ** left
         
         
-file_name = 'test3.expr'
+file_name = 'test1.expr'
 input_stream = FileStream(file_name)
 lexer = SimpleExpr3Lexer(input_stream)
 print('input_stream:')
