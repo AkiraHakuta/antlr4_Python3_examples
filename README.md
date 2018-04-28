@@ -34,8 +34,13 @@ ADD  : '+' ;
 INT : [0-9]+ ;
 WS : [ \t\n\r]+ -> skip ;
 ```
-test_SimpleExpr1.py  
+Open Command Prompt and run bin/antlr4env.bat.  
+The following command creates Python lexer and parser.
 
+```
+> cd C:\...\simpleExpr1
+> antlr4
+test_SimpleExpr1.py 
 ```  
 from antlr4 import *
 from SimpleExpr1Lexer import SimpleExpr1Lexer
@@ -84,12 +89,7 @@ test1.expr
 ```  
 10+123*3
 ```
-Open Command Prompt and run bin/antlr4env.bat.  
-The following command creates Python lexer and parser.
-
-```
-> cd C:\...\simpleExpr1
-> antlr4py3 SimpleExpr1.g4
+py3 SimpleExpr1.g4
 ```
 ```
 > python.exe test_SimpleExpr1.py
