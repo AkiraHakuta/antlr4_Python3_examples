@@ -255,7 +255,7 @@ optional arguments:
   特に、数式の表記に違いがあるようです。  
   他の方言を使う場合は、適宜変更して下さい。  
 
-- class  TokenStreamRewriter　　
+- class  TokenStreamRewriter  
   Python のコードはどうもうまく動きません。  
   java のコードと比較し、手を加えました。  
   class MyTokenStreamRewriter(TokenStreamRewriter) を作り、  
