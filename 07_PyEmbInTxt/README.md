@@ -51,7 +51,7 @@ example_text \pycode{year=1901/code} ///This is LINE_COMMENT. \pycode{year=2018/
 Question: What century is the year \pycode{print(year)/code} in ?
 Answer  : It is the \pyprn{(year-1)//100 + 1 /prn}th century.
 ```
-"PyEmbInTxt"　creates　intermediate file　"example_text.py".  
+"PyEmbInTxt" creates the intermediate file "example_text.py".  
 example_text.py  
 ```
 print('#####ctx#####')
