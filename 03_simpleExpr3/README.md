@@ -133,7 +133,7 @@ result= 379
 ###  visitor
 
 SimpleExpr3.g4    
-各alternative に Label を付けます。  
+各 alternative に Label を付けます。  
 
 ```
 expr : <assoc=right> expr EXPO expr # Expo
