@@ -40,6 +40,7 @@ The following command creates Python lexer and parser.
 ```
 > cd C:\...\simpleExpr1
 > antlr4
+```
 test_SimpleExpr1.py 
 ```  
 from antlr4 import *
