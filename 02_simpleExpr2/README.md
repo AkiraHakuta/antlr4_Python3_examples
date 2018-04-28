@@ -135,7 +135,7 @@ result = 379
 
 ###  listener
 
-SimpleExpr2.g4  　　
+SimpleExpr2.g4   
 各alternative に Label を付けることができます。  
 付ける場合は、その parser rule のすべての alternative に付けなければなりません。  
 
