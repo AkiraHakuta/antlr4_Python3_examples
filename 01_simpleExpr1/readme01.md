@@ -146,13 +146,13 @@ SimpleExpr1Lexerは文字列'13+10*7'(正確には Class FileStream) をToken �
 各数字、文字列の意味は  
 [@tokenIndex, start : stop=text ,&lt;type&gt;, line : column]
 SimpleExpr1.tokens を開くと   
-type は EXPO=1, MULT=2, ADD=3, INT=4, WS=5,'^'=1, '&#42;'=2, '+'=3  
+type は EXPO=1, MULT=2, ADD=3, INT=4, WS=5,'^'=1, '&#42;'=2, '+'=3    
 であることが分かります、'10' の type は INT です。
 
 ### parser.py  
 
-SimpleExpr1Parser は、　　
-grammar SimpleExpr1.g4 に従って、  
+SimpleExpr1Parser は、  
+grammar SimpleExpr1.g4 に従って、  
 
 Token Stream から構文木 (tree) を作ります。  
 
