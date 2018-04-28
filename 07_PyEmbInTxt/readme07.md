@@ -144,34 +144,34 @@ optional arguments:
   その code を実行、出力をその場所に埋め込むツールです。  
   構文解析 [ANTLR4](http://www.antlr.org) を使ってそれを実現しています。  
 
-- lexer, parser, ... は生成済みです。
-  PyEmbInTxt.g4 を変更するのでなければ、java, antlr-4.7.1-complete.jar は必要ありません。  
-  Python が入っていなければ、  
-  download [python3](https://www.python.org/downloads/) and `> pip install antlr4-python3-runtime `   
+- lexer, parser, ... は生成済みです。  
+  PyEmbInTxt.g4 を変更するのでなければ、java, antlr-4.7.1-complete.jar は必要ありません。    
+  Python が入っていなければ、    
+  download [python3](https://www.python.org/downloads/) and `> pip install antlr4-python3-runtime `     
 
-- text file の変換 ex1\example_text.txtpy を例として、説明します。  
-  ファイル名の拡張子は txt に py を挿入した文字列にして下さい。  
-  位置はどこでも構いません。  
-  PyEmbInTxt は py を削除したファイル example_text.txt を作ります。  
-  `\pycode{....../code}` で囲まれた部分が Python code です。
-  `\pyprn{...../prn}` は `\pycode{print(.....)/code}` と同じです。  
+- text file の変換 ex1\example_text.txtpy を例として、説明します。    
+  ファイル名の拡張子は txt に py を挿入した文字列にして下さい。    
+  位置はどこでも構いません。    
+  PyEmbInTxt は py を削除したファイル example_text.txt を作ります。   
+  `\pycode{....../code}` で囲まれた部分が Python code です。  
+  `\pyprn{...../prn}` は `\pycode{print(.....)/code}` と同じです。    
 
   1. grammar PyEmbInTxt.g4  
      `PYCODE : '\\pycode{' .*? '/code}' ;` のように ? がついていると、最短の文字列に    
-     `\pycode{year=1901/code} `と`\pycode{print(year)/code}`    
+     `\pycode{year=1901/code} `と`\pycode{print(year)/code}`     
      にmatch します。  
      ? を取って `\PYCODE : '\\pycode{' .* '/code}' ;`  とすると、最長の文字列   
      `\pycode{year=1901/code} ///This is LINE_COMMENT.....century is the year \pycode{print(year)/code}`  
-     にmatch してしまいます。
+     にmatch してしまいます。  
      こんな簡単な文法でPython code を認識することができます。  
-     `> antlr4py3 PyEmbInTxt.g4 -o gen` で Python の lexer, parser, ... をgen の中に生成します。
+     `> antlr4py3 PyEmbInTxt.g4 -o gen` で Python の lexer, parser, ... をgen の中に生成します。  
      既に、生成した lexer, parser, ... がこのfolder の中に入っていますので、  
-     PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。  
+     PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
-  2. `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`  
-     を実行すると、
-     まず、 Python file example_text.py  を生成します。
-     例えば  
+  2. `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`    
+     を実行すると、  
+     まず、 Python file example_text.py  を生成します。  
+     例えば    
 
      ```
      print('#####ctx#####')
@@ -180,7 +180,7 @@ optional arguments:
      print((year-1)//100 + 1 )
      ```
 
-     `print((year-1)//100 + 1 )`  は Python のプログラム、  
+     `print((year-1)//100 + 1 )`  は Python のプログラム、   
      `print(84)` の 84 は Token `\pyprn{(year-1)//100 + 1 /prn}` の tokenIndex です。  
 
      ```
@@ -202,7 +202,7 @@ optional arguments:
   数式処理 SymPy を使っています。　　
   関心のない方は、その部分を削除して下さい。  
   ​
-  **PythonTexとの比較**  
+  **PythonTexとの比較**   
   PythonTeX  ( included in TeX Live , W32TeX )  なるツールがあります。  
   マクロが使えます。  
   次のように 3回 compile する必要があります。  
@@ -246,12 +246,12 @@ optional arguments:
   > python.exe pyEmbInTxt.py ex2\test2.texpy
   > pdflatex.exe -synctex=1 -interaction=nonstopmode test2.tex
   ```
-- ex3 example\_markdown  
-  markdown の使用例です。  
+- ex3 example\_markdown   
+  markdown の使用例です。    
   数式処理 SymPy を使っています。　　
   関心のない方は、その部分を削除して下さい。  
   markdown には「方言」がいくつかあります。  
-  この例は GitHub に従っています。  
+  この例は GitHub に従っています。   
   特に、数式の表記に違いがあるようです。  
   他の方言を使う場合は、適宜変更して下さい。  
 
@@ -259,7 +259,7 @@ optional arguments:
   Python のコードはどうもうまく動きません。  
   java のコードと比較し、手を加えました。  
   class MyTokenStreamRewriter(TokenStreamRewriter) を作り、  
-  def _reduceToSingleOperationPerIndex(self, rewrites) を override 。  
+  def \_reduceToSingleOperationPerIndex(self, rewrites) を override 。  
   class  TokenStreamRewriter については不明な点が多くありますが、  
   元の TokenStream を変更することではないので、安心して使えます。  
 
@@ -268,6 +268,6 @@ optional arguments:
 
 ### LICENSE
 
-Copyright (c) 2018 Akira Hakuta
-Released under the MIT license
-<https://opensource.org/licenses/mit-license.php>
+Copyright (c) 2018 Akira Hakuta  
+Released under the MIT license  
+<https://opensource.org/licenses/mit-license.php>  
