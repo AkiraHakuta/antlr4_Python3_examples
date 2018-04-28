@@ -264,7 +264,9 @@ optional arguments:
   class  TokenStreamRewriter については不明な点が多くありますが、  
   元の TokenStream を変更することではないので、安心して使えます。  
 
-
+### Notes
+(1) The Definitive ANTLR 4 Reference (by Terence Parr) eBook, Paper   
+(2) [py3antlr4book](https://github.com/jszheng/py3antlr4book)  
 
 
 ### LICENSE
