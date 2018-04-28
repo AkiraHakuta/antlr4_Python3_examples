@@ -157,7 +157,7 @@ Released under the MIT license
   構文解析 [ANTLR4](http://www.antlr.org) を使ってそれを実現しています。  
 
 - lexer, parser, ... は生成済みです。  
-  PyEmbInTxt.g4 を変更するのでなければ、java, antlr-4.7.1-complete.jar は必要ありません。    
+  PyEmbInTxt.g4 を変更するのでなければ、Java, antlr-4.7.1-complete.jar は必要ありません。    
   Python が入っていなければ、    
   download [python3](https://www.python.org/downloads/) and `> pip install antlr4-python3-runtime `     
 
