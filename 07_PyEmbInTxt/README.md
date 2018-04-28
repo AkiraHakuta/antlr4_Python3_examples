@@ -132,6 +132,17 @@ optional arguments:
   -s SEP, --sep SEP  set separator, for example -s #$#$MYSEP#$#$
 ```
 
+### Notes
+(1) The Definitive ANTLR 4 Reference (by Terence Parr) eBook, Paper   
+(2) [py3antlr4book](https://github.com/jszheng/py3antlr4book)  
+
+
+### LICENSE
+
+Copyright (c) 2018 Akira Hakuta  
+Released under the MIT license  
+<https://opensource.org/licenses/mit-license.php>  
+
 
 
 *******
@@ -263,14 +274,3 @@ optional arguments:
   def \_reduceToSingleOperationPerIndex(self, rewrites) を override 。  
   class  TokenStreamRewriter については不明な点が多くありますが、  
   元の TokenStream を変更することではないので、安心して使えます。  
-
-### Notes
-(1) The Definitive ANTLR 4 Reference (by Terence Parr) eBook, Paper   
-(2) [py3antlr4book](https://github.com/jszheng/py3antlr4book)  
-
-
-### LICENSE
-
-Copyright (c) 2018 Akira Hakuta  
-Released under the MIT license  
-<https://opensource.org/licenses/mit-license.php>  
