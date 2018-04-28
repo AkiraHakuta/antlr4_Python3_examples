@@ -1,6 +1,6 @@
 
 
-## 07 PyEmbInTxt  
+## PyEmbInTxt  
 
 "PyEmbInTxt" runs  Python code embedded in text file and embed it's output .  
 
