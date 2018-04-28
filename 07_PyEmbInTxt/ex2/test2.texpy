@@ -1,0 +1,10 @@
+\documentclass[pdflatex]{article}
+\pycode{
+def power(x,y):
+	return str(x)+'^{'+str(y)+'}='+str(x**y)
+/code}
+\begin{document}
+	{\large\bf test2~~by PyEmbInTxt }\par\vspace{5mm}
+	$\pyprn{power(2,20)/prn}$\par
+	$\pyprn{power(3,30)/prn}$
+\end{document}
