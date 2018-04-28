@@ -199,9 +199,9 @@ optional arguments:
 
 - ex2 example\_latex  
   latex の使用例です。  
-  数式処理 SymPy を使っています。　　
+  数式処理 SymPy を使っています。  
   関心のない方は、その部分を削除して下さい。  
-  ​
+    
   **PythonTexとの比較**   
   PythonTeX  ( included in TeX Live , W32TeX )  なるツールがあります。  
   マクロが使えます。  
