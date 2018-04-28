@@ -182,7 +182,7 @@ Released under the MIT license
 
   (2).  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`    
      を実行すると、  
-     まず、 Python file example_text.py  を生成します。  
+     まず、 中間ファイル Python file example_text.py  を生成します。   
      例えば    
 
      ```
