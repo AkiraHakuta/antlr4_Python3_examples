@@ -7,8 +7,8 @@
 
 - antlr4 python3 runtime (4.7.1)  
 ` pip install antlr4-python3-runtime`
-- [antlr-4.7.1-complete.jar](http://www.antlr.org/download.html)
-make C:\Javalib
+- [Complete ANTLR 4.7.1 Java binaries jar](http://www.antlr.org/download.html)
+make C:\Javalib and 
 save antlr-4.7.1-complete.jar in C:\Javalib.  
 - java
 
