@@ -119,7 +119,7 @@ Java, C++, Python(2 and 3), ...  のコードを生成することができま�
 SimpleExpr1.g4は EBNF に基づいて書かれています。  
 正規表現を知っている方なら上記の文法を見て、なんとなく分かると思います。  
 &nbsp;  
-parser rule name は小文字、
+parser rule name は小文字、  
 lexer rule name は大文字のアルファベットではじめなければならない。  
 lexer, parser 共に、定義された順に高い優先度が与えられます。  
 &nbsp;  
