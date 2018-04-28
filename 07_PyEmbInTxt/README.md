@@ -147,7 +147,7 @@ Released under the MIT license
 
 *******
 
-####  in japanese    
+###  in japanese    
 
 使用環境 Windows      
 
