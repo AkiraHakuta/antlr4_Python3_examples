@@ -10,7 +10,7 @@
  - antlr-4.7.1-complete.jar ([Complete ANTLR 4.7.1 Java binaries jar](http://www.antlr.org/download.html))  
 make C:\Javalib and 
 save antlr-4.7.1-complete.jar in C:\Javalib.  
-- java
+- Java
 
 ## first example (simpleExpr1)   
 
