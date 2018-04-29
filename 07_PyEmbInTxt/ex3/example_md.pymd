@@ -51,8 +51,8 @@ for func in func_list:
 
 
 ### 日本語の処理
-- embedPyInTxtはPythonで記述しています   
-\pyprn{'embedPyInTxtはPythonで記述しています'/prn}  
+- antlr4はLL構文解析に基づくparser generatorである   
+\pyprn{'antlr4はLL構文解析に基づくparser generatorである'/prn}  
 - \pycode{
 num = 10
 print('\'日本語 \'を',num,'回表示します  ')

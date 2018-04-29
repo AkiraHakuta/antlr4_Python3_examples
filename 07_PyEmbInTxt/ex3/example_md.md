@@ -34,7 +34,7 @@
 
 
 ### 日本語の処理
-- embedPyInTxtはPythonで記述しています   
-embedPyInTxtはPythonで記述しています  
+- antlr4はLL構文解析に基づくparser generatorである   
+antlr4はLL構文解析に基づくparser generatorである  
 - '日本語 'を 10 回表示します  
 日本語 日本語 日本語 日本語 日本語 日本語 日本語 日本語 日本語 日本語  
