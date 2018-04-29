@@ -162,7 +162,7 @@ Released under the MIT license
   Python が入っていなければ、    
   download [python3](https://www.python.org/downloads/) and `> pip install antlr4-python3-runtime `     
 
-- text file  ex1\example_text.txtpy を例として、説明します。    
+- text file  ex1\example_text.txtpy を例として、説明します。  
   ファイル名の拡張子は txt に py を挿入した文字列にして下さい。    
   位置はどこでも構いません。    
   PyEmbInTxt は py を削除したファイル example_text.txt を作ります。   
