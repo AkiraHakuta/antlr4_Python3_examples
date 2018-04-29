@@ -49,8 +49,8 @@ for func in func_list:
 print('\\end{tabular}')
 /code}\vspace{5mm}
 
-	\item embedPyInTxtはPythonで記述しています\\
-		\pyprn{'embedPyInTxtはPythonで記述しています'/prn} \vspace{5mm}
+	\item antlr4はLL構文解析に基づくparser generatorである\\
+		\pyprn{'antlr4はLL構文解析に基づくparser generatorである'/prn} \vspace{5mm}
 		
 	\item 
 \pycode{
