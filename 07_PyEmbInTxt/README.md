@@ -183,7 +183,7 @@ Released under the MIT license
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
   (2)  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`   
-     を実行すると、中間ファイル example_text.py が生成されます。  
+    を実行すると、中間ファイル example_text.py が生成されます。  
      例えば  
      ```
      print('#####ctx#####')
