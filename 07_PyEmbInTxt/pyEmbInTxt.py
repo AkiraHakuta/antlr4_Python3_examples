@@ -110,7 +110,7 @@ def main(file_name, sep, file_list):
     f.write(result)
     f.close()
 
-    print('\nPyEmbInTxt creates \'{}\'.\n'.format(os.path.basename(create_file)))
+    print('PyEmbInTxt creates \'{}\'.'.format(os.path.basename(create_file)))
 
 
 
@@ -120,7 +120,7 @@ if __name__ == '__main__':
     aparser.add_argument('-v','--version', version='%(prog)s version {}'.format(version), action='version')
     aparser.add_argument("-s","--sep", help="set separator, for example -s #$#$MYSEP#$#$",default = DEFAULT_SEP)
     args = aparser.parse_args()
-    print('\nThis is PyEmbInTxt version {}.'.format(version))
+    print('This is PyEmbInTxt version {}.'.format(version))
     filename = args.filename
     path, sf_ext = os.path.splitext(filename)
     if sf_ext[1:].find('py') == -1 or sf_ext[1:].replace('py','') == '':
