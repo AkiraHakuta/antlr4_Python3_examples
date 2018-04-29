@@ -2,7 +2,7 @@
 
 ## PyEmbInTxt  
 
-PyEmbInTxt is a converter that runs Python code embedded in text file and replaces it with the output.
+PyEmbInTxt is a tool that runs Python code embedded in text file and replaces it with the output.
 
 
 - PyEmbInTxt.g4  
