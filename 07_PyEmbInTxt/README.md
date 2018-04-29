@@ -2,7 +2,8 @@
 
 ## PyEmbInTxt  
 
-"PyEmbInTxt" runs Python code embedded in text file and replaces it with it's output .   
+"PyEmbInTxt" runs Python code embedded in text file and replaces it with output.  
+   
 
 - PyEmbInTxt.g4  
 ```
