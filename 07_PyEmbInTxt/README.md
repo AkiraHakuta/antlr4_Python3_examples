@@ -49,7 +49,7 @@ This is COMMENT.
 *///
 example_text \pycode{year=1901/code} ///This is LINE_COMMENT. \pycode{year=2018/code} 
 
-Question: What century is the year \pycode{print(year)/code} in ?
+Question: What century is the year \pycode{print(year)/code} in?
 Answer  : It is the \pyprn{(year-1)//100 + 1 /prn}th century.
 ```
 "PyEmbInTxt" creates the intermediate file "example_text.py".  
@@ -89,7 +89,7 @@ example_text.txt
 
 example_text  
 
-Question: What century is the year 1901 in ?
+Question: What century is the year 1901 in?
 Answer  : It is the 20th century.
 ```
 
