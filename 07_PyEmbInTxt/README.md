@@ -3,7 +3,7 @@
 ## PyEmbInTxt  
 
 PyEmbInTxt is a converter that runs Python code embedded in text file and replaces it with the output.
-   
+
 
 - PyEmbInTxt.g4  
 ```
@@ -183,8 +183,9 @@ Released under the MIT license
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
   (2)  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`   
-    を実行すると、中間ファイル example_text.py が生成されます。  
-     例えば  
+  を実行すると、中間ファイル example_text.py が生成されます。  
+  例えば  
+
      ```
      print('#####ctx#####')
      print(84)
@@ -213,12 +214,12 @@ Released under the MIT license
   latex の使用例です。  
   数式処理 SymPy を使っています。  
   関心のない方は、その部分を削除して下さい。  
-    
+
   **PythonTexとの比較**   
   PythonTeX  ( included in TeX Live , W32TeX )  なるツールがあります。  
-  マクロを使うことができます。  
-  しかし、3回 compile しなければなりません。  
-  test1.tex  
+    マクロを使うことができます。  
+    しかし、3回 compile しなければなりません。  
+    test1.tex  
   ```
   \documentclass[pdflatex]{article}
 
