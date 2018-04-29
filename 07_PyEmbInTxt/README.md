@@ -169,7 +169,7 @@ Released under the MIT license
   `\pycode{....../code}` で囲まれた部分が Python code です。  
   `\pyprn{...../prn}` は `\pycode{print(.....)/code}` と同じです。    
 
-  (1).  grammar PyEmbInTxt.g4  
+  (1)  grammar PyEmbInTxt.g4  
      `PYCODE : '\\pycode{' .*? '/code}' ;` のように ? がついていると、最短の文字列に    
      `\pycode{year=1901/code} `と`\pycode{print(year)/code}`     
      に match します。  
@@ -182,10 +182,10 @@ Released under the MIT license
      既に、生成した lexer, parser, ... がこの folder の中に入っていますので、  
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
-  (2).  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`  
-     を実行する。  
-     中間ファイル example_text.py を生成します。   
-     例えば    
+  (2)  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`  
+     を実行する。    
+     中間ファイル example_text.py を生成します。    
+     例えば     
 
      ```
      print('#####ctx#####')
