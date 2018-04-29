@@ -211,7 +211,7 @@ Released under the MIT license
      text file example_text.txt  を作って、処理終了！  
 
 - ex2 example\_latex  
-  latex での使用例です。  
+  latex の使用例です。  
   数式処理 SymPy を使っています。  
   関心のない方は、その部分を削除して下さい。  
 
@@ -259,7 +259,7 @@ Released under the MIT license
   > pdflatex.exe -synctex=1 -interaction=nonstopmode test2.tex
   ```
 - ex3 example\_markdown   
-  markdown での使用例です。  
+  markdown の使用例です。  
   数式処理 SymPy を使っています。  
   関心のない方は、その部分を削除して下さい。  
   markdown には「方言」がいくつかあります。  
