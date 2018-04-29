@@ -162,7 +162,7 @@ Released under the MIT license
   Python が入っていなければ、    
   download [python3](https://www.python.org/downloads/) and `> pip install antlr4-python3-runtime `     
 
-- text file の変換 ex1\example_text.txtpy を例として、説明します。    
+- text file  ex1\example_text.txtpy を例として、説明します。    
   ファイル名の拡張子は txt に py を挿入した文字列にして下さい。    
   位置はどこでも構いません。    
   PyEmbInTxt は py を削除したファイル example_text.txt を作ります。   
@@ -211,7 +211,7 @@ Released under the MIT license
      text file example_text.txt  を作って、処理終了！  
 
 - ex2 example\_latex  
-  latex の使用例です。  
+  latex での使用例です。  
   数式処理 SymPy を使っています。  
   関心のない方は、その部分を削除して下さい。  
 
@@ -259,7 +259,7 @@ Released under the MIT license
   > pdflatex.exe -synctex=1 -interaction=nonstopmode test2.tex
   ```
 - ex3 example\_markdown   
-  markdown の使用例です。    
+  markdown での使用例です。    
   数式処理 SymPy を使っています。  
   関心のない方は、その部分を削除して下さい。  
   markdown には「方言」がいくつかあります。  
