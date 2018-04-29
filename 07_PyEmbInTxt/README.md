@@ -183,7 +183,7 @@ Released under the MIT license
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
   (2)  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`   
-     を実行する。  
+     を実行する。  
      中間ファイル example_text.py を生成します。  
      例えば    
 
