@@ -182,7 +182,8 @@ Released under the MIT license
      既に、生成した lexer, parser, ... がこの folder の中に入っていますので、  
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
-  (2).  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy` を実行すると、  
+  (2).  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`  
+      実行すると、  
      まず、 中間ファイル example_text.py  を生成します。   
      例えば    
 
