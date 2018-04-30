@@ -216,7 +216,7 @@ Released under the MIT license
   関心のない方は、その部分を削除して下さい。  
 
   **PythonTexとの比較**   
-  PythonTeX  ( included in TeX Live , W32TeX )  なるツールがあります。  
+  [PythonTeX](https://github.com/gpoore/pythontex)  ( included in TeX Live , W32TeX )  なるツールがあります。  
     マクロを使うことができます。  
     しかし、3回 compile しなければなりません。  
     test1.tex  
