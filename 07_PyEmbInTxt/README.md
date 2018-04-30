@@ -157,8 +157,8 @@ Released under the MIT license
 使用環境 Windows      
 
 - PyEmbInTxt は Python code が埋め込まれた text file から code を抜き取り、  
-  その code を実行、code をその出力で置き換えるツールです。  
-  構文解析 [ANTLR4](http://www.antlr.org) を使ってそれを実現しています。  
+  その code を実行、code をその出力で置き換えるツールです。  
+  構文解析 [ANTLR4](http://www.antlr.org) を使ってそれを実現しています。  　
 
 - lexer, parser, ... は生成済みです。  
   PyEmbInTxt.g4 を変更するのでなければ、Java, antlr-4.7.1-complete.jar は必要ありません。    
