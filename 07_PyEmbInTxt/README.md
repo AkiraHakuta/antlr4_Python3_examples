@@ -85,7 +85,7 @@ print((year-1)//100 + 1 )
 20
 ```
 '84' is tokenIndex of Token'\pyprn{(year-1)//100 + 1 /prn}'.   
-PyEmbInTxt replaces Token'\pyprn{(year-1)//100 + 1 /prn}' with '20'.  
+PyEmbInTxt replaces Token'\pyprn{(year-1)//100 + 1 /prn}'.text with '20'.  
 
 example_text.txt   
 ```
