@@ -98,7 +98,7 @@ Answer  : It is the 20th century.
 ####  ex2 example\_latex
 
 `> pip install sympy`  
-install pdflatex.exe ( included in TeX Live , W32TeX )  
+install pdflatex.exe ( included in [TeX Live](http://www.tug.org/texlive/) , W32TeX )  
 ```
 > python.exe pyEmbInTxt.py ex2\example_latex.texpy
 This is PyEmbInTxt version 1.0.
