@@ -69,7 +69,7 @@ print('#####ctx#####')
 print((year-1)//100 + 1 )
 
 ```
-
+'84' is tokenIndex of Token'\pyprn{(year-1)//100 + 1 /prn}'.  
 ```
 > python.exe ex1\example_text.py 
 #####ctx#####
