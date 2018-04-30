@@ -211,7 +211,7 @@ Released under the MIT license
      text file example_text.txt  を作って、処理終了！  
 
 - ex2 example\_latex  
-  latex の使用例です。  
+  LaTeX の使用例です。  
   数式処理 SymPy を使っています。  
   関心のない方は、その部分を削除して下さい。  
 
