@@ -69,7 +69,7 @@ print('#####ctx#####')
 print((year-1)//100 + 1 )
 
 ```
-'84' is tokenIndex of Token'\pyprn{(year-1)//100 + 1 /prn}'.  
+ 
 ```
 > python.exe ex1\example_text.py 
 #####ctx#####
@@ -84,6 +84,9 @@ print((year-1)//100 + 1 )
 #####ctx#####
 20
 ```
+'84' is tokenIndex of Token'\pyprn{(year-1)//100 + 1 /prn}'.   
+PyEmbInTxt replaces Token'\pyprn{(year-1)//100 + 1 /prn}' with '20'.  
+
 example_text.txt   
 ```
 
