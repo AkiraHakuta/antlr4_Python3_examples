@@ -15,7 +15,7 @@ executables = [cx_Freeze.Executable(script="pyEmbInTxt.py",targetName="pyEmbInTx
 cx_Freeze.setup(
     name = "PyEmbInTxt",
     options = {"build_exe": 
-        {"build_exe":"pyEmbInTxt/","includes":includes, "include_files": include_files, "excludes": excludes,"packages": packages}},
+        {"build_exe":"PyEmbInTxt/","includes":includes, "include_files": include_files, "excludes": excludes,"packages": packages}},
     version = "1.0",
     description = "PyEmbInTxt runs Python in text file",
     executables = executables)
