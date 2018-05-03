@@ -69,7 +69,7 @@ print('#####ctx#####')
 print((year-1)//100 + 1 )
 
 ```
- 
+
 ```
 > python.exe ex1\example_text.py 
 #####ctx#####
@@ -135,6 +135,17 @@ optional arguments:
   -h, --help         show this help message and exit
   -v, --version      show program's version number and exit
   -s SEP, --sep SEP  set separator, for example -s #$#$MYSEP#$#$
+```
+### exe file
+
+If you want to convert pyEmbInTxt.py to .exe file ,  
+` pip install cx_Freeze `   
+` python.exe setup.py ` 
+
+```
+> pyText\pyText.exe ex2\example_latex.texpy
+This is PyEmbInTxt version 1.0.
+PyEmbInTxt creates 'example_latex.tex'.
 ```
 
 ### Notes
@@ -215,8 +226,8 @@ Released under the MIT license
 
 - ex2 example\_latex  
   LaTeX の使用例です。  
-  数式処理 SymPy を使っています。  
-  関心のない方は、その部分を削除して下さい。  
+    数式処理 SymPy を使っています。  
+    関心のない方は、その部分を削除して下さい。  
 
   **PythonTexとの比較**   
   [PythonTeX](https://github.com/gpoore/pythontex)  ( included in TeX Live , W32TeX )  なるツールがあります。  
@@ -262,13 +273,13 @@ Released under the MIT license
   > pdflatex.exe -synctex=1 -interaction=nonstopmode test2.tex
   ```
 - ex3 example\_markdown   
-  Markdown の使用例です。  
-  数式処理 SymPy を使っています。  
-  関心のない方は、その部分を削除して下さい。  
-  Markdown には「方言」がいくつかあります。  
-  この例は GitHub に従っています。   
-  特に、数式の表記に違いがあるようです。  
-  他の方言を使う場合は、適宜変更して下さい。  
+    Markdown の使用例です。  
+    数式処理 SymPy を使っています。  
+    関心のない方は、その部分を削除して下さい。  
+    Markdown には「方言」がいくつかあります。  
+    この例は GitHub に従っています。   
+    特に、数式の表記に違いがあるようです。  
+    他の方言を使う場合は、適宜変更して下さい。  
 
 - class  TokenStreamRewriter  
   Python のコードはどうもうまく動きません。  
@@ -277,3 +288,16 @@ Released under the MIT license
   def \_reduceToSingleOperationPerIndex(self, rewrites) を override 。  
   class  TokenStreamRewriter については不明な点が多くありますが、  
   元の TokenStream を変更することではないので、安心して使えます。  
+
+- 実行ファイルの作成
+  cx_Freeze を利用すると、exe ファイルを作ることができます。  
+  ` pip install cx_Freeze `   
+  ` python.exe setup.py `   
+  フォルダ pyText の中に pyText.exe  ができます。  
+
+  ```
+  > pyText\pyText.exe ex2\example_latex.texpy
+  This is PyEmbInTxt version 1.0.
+  PyEmbInTxt creates 'example_latex.tex'.
+  ```
+
