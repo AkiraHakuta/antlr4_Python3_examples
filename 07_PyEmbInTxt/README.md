@@ -293,10 +293,10 @@ Released under the MIT license
   cx_Freeze を利用すると、exe ファイルを作ることができます。  
   ` pip install cx_Freeze `   
   ` python.exe setup.py `   
-  フォルダ pyText の中に pyText.exe  ができます。  
+  フォルダ pyText の中に PyEmbInTxt.exe  ができます。  
 
   ```
-  > pyText\pyText.exe ex2\example_latex.texpy
+  > pyText\PyEmbInTxt.exe ex2\example_latex.texpy
   This is PyEmbInTxt version 1.0.
   PyEmbInTxt creates 'example_latex.tex'.
   ```
