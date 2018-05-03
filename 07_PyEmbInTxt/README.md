@@ -139,8 +139,8 @@ optional arguments:
 ### exe file
 
 If you want to convert pyEmbInTxt.py to .exe file ,  
-` pip install cx_Freeze `   
-` python.exe setup.py ` 
+` > pip install cx_Freeze `   
+` > python.exe setup.py ` 
 
 ```
 > PyEmbInTxt\pyEmbInTxt.exe ex2\example_latex.texpy
@@ -291,8 +291,8 @@ Released under the MIT license
 
 - 実行ファイルの作成  
   cx_Freeze を利用すると、exe ファイルを作ることができます。  
-  ` pip install cx_Freeze `   
-  ` python.exe setup.py `   
+  ` > pip install cx_Freeze `   
+  ` > python.exe setup.py `   
   フォルダ PyEmbInTxt の中に pyEmbInTxt.exe  ができます。  
 
   ```
