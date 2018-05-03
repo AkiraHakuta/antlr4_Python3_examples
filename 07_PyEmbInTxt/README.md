@@ -143,7 +143,7 @@ If you want to convert pyEmbInTxt.py to .exe file ,
 ` python.exe setup.py ` 
 
 ```
-> pyText\pyEmbInTxt.exe ex2\example_latex.texpy
+> pyText\pyText.exe ex2\example_latex.texpy
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_latex.tex'.
 ```
@@ -289,14 +289,15 @@ Released under the MIT license
   class  TokenStreamRewriter については不明な点が多くありますが、  
   元の TokenStream を変更することではないので、安心して使えます。  
 
-- 実行ファイルの作成  
+- 実行ファイルの作成
   cx_Freeze を利用すると、exe ファイルを作ることができます。  
   ` pip install cx_Freeze `   
   ` python.exe setup.py `   
-  フォルダ pyText の中に pyEmbInTxt.exe  ができます。  
+  フォルダ pyText の中に pyText.exe  ができます。  
+
   ```
-> pyText\pyEmbInTxt.exe ex2\example_latex.texpy
-This is PyEmbInTxt version 1.0.
-PyEmbInTxt creates 'example_latex.tex'.
+  > pyText\pyText.exe ex2\example_latex.texpy
+  This is PyEmbInTxt version 1.0.
+  PyEmbInTxt creates 'example_latex.tex'.
   ```
 
