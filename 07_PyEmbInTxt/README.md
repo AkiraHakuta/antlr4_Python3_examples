@@ -296,7 +296,7 @@ Released under the MIT license
   フォルダ pyText の中に pyEmbInTxt.exe  ができます。  
 
   ```
-  > pyText\pyEmbInTxt.exe ex2\example_latex.texpy
+> pyText\pyEmbInTxt.exe ex2\example_latex.texpy
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_latex.tex'.
   ```
