@@ -294,7 +294,6 @@ Released under the MIT license
   ` pip install cx_Freeze `   
   ` python.exe setup.py `   
   フォルダ pyText の中に pyEmbInTxt.exe  ができます。  
-
   ```
 > pyText\pyEmbInTxt.exe ex2\example_latex.texpy
 This is PyEmbInTxt version 1.0.
