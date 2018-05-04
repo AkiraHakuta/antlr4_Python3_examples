@@ -303,5 +303,5 @@ Released under the MIT license
   PyEmbInTxt creates 'example_latex.tex'.
   > Exit code: 0    Time: 2.038
   ```
-exe ファイルを作っても、残念ながら、実行時間に差はありません。  
+  exe ファイルを作っても、残念ながら、実行時間に差はありません。  
 
