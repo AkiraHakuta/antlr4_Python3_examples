@@ -147,6 +147,7 @@ If you want to convert pyEmbInTxt.py to .exe file ,
 > PyEmbInTxt\pyEmbInTxt.exe ex2\example_latex.texpy
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_latex.tex'.
+> Exit code: 0    Time: 2.038
 ```
 
 ### Notes
