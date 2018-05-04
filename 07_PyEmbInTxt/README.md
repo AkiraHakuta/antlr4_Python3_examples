@@ -103,10 +103,10 @@ Answer  : It is the 20th century.
 `> pip install sympy`  
 install pdflatex.exe ( included in [TeX Live](http://www.tug.org/texlive/) , [W32TeX](http://w32tex.org/index.html) )  
 ```
->python.exe pyEmbInTxt.py ex2\example_latex.texpy
+> python.exe pyEmbInTxt.py ex2\example_latex.texpy
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_latex.tex'.
->Exit code: 0    Time: 2.024
+> Exit code: 0    Time: 2.024
 ```
 
 
@@ -297,10 +297,10 @@ Released under the MIT license
   フォルダ PyEmbInTxt の中に pyEmbInTxt.exe  ができます。  
 
   ```
-  >PyEmbInTxt\pyEmbInTxt.exe ex2\example_latex.texpy
-This is PyEmbInTxt version 1.0.
-PyEmbInTxt creates 'example_latex.tex'.
->Exit code: 0    Time: 2.038
-  ```  
-残念ながら、実行時間に差はありません。  
+  > PyEmbInTxt\pyEmbInTxt.exe ex2\example_latex.texpy
+  This is PyEmbInTxt version 1.0.
+  PyEmbInTxt creates 'example_latex.tex'.
+  > Exit code: 0    Time: 2.038
+  ```
+exe ファイルを作っても、残念ながら、実行時間に差はありません。  
 
