@@ -1,0 +1,104 @@
+\documentclass[a4paper, 10pt]{article}
+///\documentclass[pdflatex, b5paper, 10pt, jadriver=standard]{bxjsarticle}/// japanese
+\setlength{\oddsidemargin}{-18mm}
+\setlength{\evensidemargin}{0mm}
+\setlength{\topmargin}{-20mm}
+\setlength{\headheight}{7mm}
+\setlength{\headsep}{5mm}
+\setlength{\textwidth}{195mm}
+\setlength{\textheight}{297mm} 
+\setlength{\hoffset}{0mm}
+
+\def\theenumi{\large\fboxsep=2pt\fboxrule=0.4pt\fbox{~\arabic{enumi}~}~}
+\def\labelenumi{\theenumi}
+\renewcommand{\labelenumii}{(\arabic{enumii})~}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumerate}
+\newcounter{txenumi}
+\newenvironment{txenumerate}[2][0]
+	{\setcounter{txenumi}{#1}%
+	\par\noindent\hspace{-10mm}\tabularx{\textwidth}[t]
+	{*{#2}{>{\stepcounter{txenumi}\makebox[1.9em][l]{(\arabic{txenumi})\hfill}}X}}%
+	}{\endtabularx}
+
+\newcommand{\multicol}[2]{\multicolumn{#1}{>{\hsize=#1\hsize}X}
+	{{\stepcounter{txenumi}\makebox[1.9em][l]{(\arabic{txenumi})\hfill}}#2}}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{{\Large\bf Math Exersise}\hfill Class\underline{\hspace{10mm}}
+~~No~\underline{\hspace{10mm}}~~Name~\underline{\hspace{30mm}}}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0.0pt}
+
+\usepackage{color}
+\usepackage{amsmath,amssymb}
+\begin{pyc}
+from math_mod import myexpr, SymOp
+ans = 1 # if ans = 0, the answers disappear.
+\end{pyc}
+
+\begin{document} 
+	   
+	\begin{enumerate}
+    
+		\item Simplify the expressions. 
+            \def\myvspace{\vspace{5mm}}
+			\begin{txenumerate}[0]{2}
+				\pyp{myexpr('(2+3\\ii)^4',SymOp.EXPAND,ans)/pyp}&
+				\pyp{myexpr('\\left|~ \\left|\,3-\\ppi \,\\right|+3-\\sqrt{10}~\\right|',SymOp.SIMPLIFY,ans)/pyp}
+            \end{txenumerate}
+            
+        \item Expand the expressions. 
+			\begin{txenumerate}{2}
+				\pyp{myexpr('(x-2y)^3',SymOp.EXPAND,ans)/pyp}&
+				\pyp{myexpr(r'\left(\dfrac{3}{~2~}\alpha-\dfrac{5}{~4~}\beta+\dfrac{7}{~6~}\gamma \right)^2',SymOp.EXPAND,ans)/pyp}\\
+				\multicol{2}{\pyp{myexpr('(a+2)^{10}',SymOp.EXPAND,ans)/pyp}}\\
+                \pyp{myexpr('\\sin{5\\theta}',SymOp.EXPAND_TRIG,ans)/pyp}&
+				\pyp{myexpr('\\log{x^2y^3z^4}',SymOp.EXPAND_LOG,ans)/pyp}\\
+            \end{txenumerate}
+            
+        \item Factor the expressions.
+			\begin{txenumerate}{2}
+				\pyp{myexpr('6x^2-5xy-6y^2',SymOp.FACTOR,ans)/pyp}&
+				\pyp{myexpr('ab(a+b)+bc(b+c)+ca(c+a)+2abc',SymOp.FACTOR,ans)/pyp}
+            \end{txenumerate}
+            
+        \item Solve for x the following equation and inequality.
+            \def\myvspace{\vspace{10mm}}
+			\begin{txenumerate}{2}
+				\pyp{myexpr('3x^3-10x^2+17x-12=0',SymOp.EQUATION_X,ans)/pyp}&
+				\pyp{myexpr('x^2-3x-4 \\geqq 0',SymOp.INEQUALITY_X,ans)/pyp}
+            \end{txenumerate}
+            
+        \item Find the sum and the limit.
+			\begin{txenumerate}{2}
+				\pyp{myexpr(r'\sum_{k=1}^{n}{ k(k+1)^2}',SymOp.FACTOR,ans)/pyp}&
+				\pyp{myexpr(r'\lim_{x \to \infty} {x^2(x-\sqrt[3]{x^3+1})}',SymOp.SIMPLIFY,ans)/pyp}
+            \end{txenumerate}
+            
+        \item Find the derivative.
+			\begin{txenumerate}[0]{2}
+				\pyp{myexpr(r'\dfrac{d}{dx}{(x^2\log{x})}',SymOp.FACTOR,ans)/pyp}&
+				\pyp{myexpr(r'\dfrac{d^{3}}{d\theta^{3}}{(\theta\cos {\theta})}',SymOp.FACTOR,ans)/pyp}
+            \end{txenumerate}
+            
+        \item  Find the indefinite integral and the definite integral.
+			\begin{txenumerate}{2}
+				\pyp{myexpr(r'\int{\ee^x\sin{x} dx}',SymOp.FACTOR,ans)/pyp}&
+				\pyp{myexpr(r'\int_{-1}^{\frac{3}{2}}{(x+1)^2(2x-3) dx}',SymOp.SIMPLIFY,ans)/pyp}
+            \end{txenumerate}
+            
+        \item  Solve the recurrence relations.
+			\begin{txenumerate}{2}
+				\pyp{myexpr('a_{n+1}=3a_{n}+4,~a_1=5',SymOp.REC_FORM_1,ans)/pyp}&
+				\pyp{myexpr('a_{n+2}-2a_{n+1}-8a_{n}=0,~a_1 = \\dfrac{1}{~2~},~a_2=3',SymOp.REC_FORM_2,ans)/pyp}
+            \end{txenumerate}        
+        
+	\end{enumerate}
+	
+\end{document}

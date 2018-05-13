@@ -4,12 +4,12 @@ grammar PyEmbInTxt;
 
 stat : ( py | SP | OTHER )*;
 
-py : PYCODE # Pycd
-    | PYPRN # Pypr
+py : PYCODE # pyc
+    | PYPRN # pyp
     ;
 
-PYCODE : '\\pycode{' .*? '/code}' ;
-PYPRN  : '\\pyprn{' .*? '/prn}'  ;
+PYCODE : '\\begin{pyc}' .*? '\\end{pyc}' ;
+PYPRN  : '\\pyp{' .*? '/pyp}'  ;
 
 SP : [ ] ;
 COMMENT : '///*' .*? '*///'   -> skip ;

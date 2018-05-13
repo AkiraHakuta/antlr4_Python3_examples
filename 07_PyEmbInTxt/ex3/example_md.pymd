@@ -6,7 +6,7 @@ This is COMMENT.
 ## Trigonometric Table  ///This is LINE_COMMENT.
 |*x* (deg)|sin *x*|cos *x*|tan *x*|
 |:-:|:------:|:------:|:------:|
-\pycode{
+\begin{pyc}
 import math
 
 def md_mathexpr(expr):
@@ -30,13 +30,13 @@ while True:
     deg += step
     if deg > 90.000:
         break        
-/code}  
+\end{pyc} 
 
 
 ## Derivative and Integral Table  
 |Derivative|Integral|
 |:--------|:------|
-\pycode{
+\begin{pyc}
 from sympy import *
 x = symbols('x')
 func_list = [x**2*sin(x), x**2*exp(x), x**2*log(x)]
@@ -47,15 +47,15 @@ for func in func_list:
     math_str +=  md_mathexpr(latex(Integral(func, x))+'='+latex(Integral(func, x).doit())+'+C')
     math_str += '|'
     print(math_str)
-/code}  
+\end{pyc}  
 
 
 ### 日本語の処理
 - antlr4はLL構文解析に基づくparser generatorである   
-\pyprn{'antlr4はLL構文解析に基づくparser generatorである'/prn}  
-- \pycode{
+\pyp{'antlr4はLL構文解析に基づくparser generatorである'/pyp}  
+- \begin{pyc}
 num = 10
 print('\'日本語 \'を',num,'回表示します  ')
 for i in range(num):
     print('日本語 ',end='')
-/code} 
+\end{pyc} 

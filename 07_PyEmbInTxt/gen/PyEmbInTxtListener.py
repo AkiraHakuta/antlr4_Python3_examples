@@ -17,21 +17,21 @@ class PyEmbInTxtListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by PyEmbInTxtParser#Pycd.
-    def enterPycd(self, ctx:PyEmbInTxtParser.PycdContext):
+    # Enter a parse tree produced by PyEmbInTxtParser#pyc.
+    def enterPyc(self, ctx:PyEmbInTxtParser.PycContext):
         pass
 
-    # Exit a parse tree produced by PyEmbInTxtParser#Pycd.
-    def exitPycd(self, ctx:PyEmbInTxtParser.PycdContext):
+    # Exit a parse tree produced by PyEmbInTxtParser#pyc.
+    def exitPyc(self, ctx:PyEmbInTxtParser.PycContext):
         pass
 
 
-    # Enter a parse tree produced by PyEmbInTxtParser#Pypr.
-    def enterPypr(self, ctx:PyEmbInTxtParser.PyprContext):
+    # Enter a parse tree produced by PyEmbInTxtParser#pyp.
+    def enterPyp(self, ctx:PyEmbInTxtParser.PypContext):
         pass
 
-    # Exit a parse tree produced by PyEmbInTxtParser#Pypr.
-    def exitPypr(self, ctx:PyEmbInTxtParser.PyprContext):
+    # Exit a parse tree produced by PyEmbInTxtParser#pyp.
+    def exitPyp(self, ctx:PyEmbInTxtParser.PypContext):
         pass
 
 

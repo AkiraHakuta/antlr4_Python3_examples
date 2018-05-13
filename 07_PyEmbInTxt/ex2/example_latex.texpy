@@ -12,7 +12,7 @@ This is COMMENT.
 		
 		\item {\bf Trigonometric Table}\vspace{2mm}
 
-\pycode{
+\begin{pyc}
 import math
 print('\\begin{tabular}{|c|c|c|c|}\\hline')
 print('$x^\\circ$ & $\\sin x$ & $\\cos x$ & $\\tan x$\\\\ \\hline')
@@ -31,11 +31,11 @@ while True:
 	if deg > 90.000:
 		break   
 print('\\end{tabular}')
-/code}\vspace{5mm}
+\end{pyc}\vspace{5mm}
 
 		\item {\bf Derivative and Integral Table }\vspace{2mm}
 		
-\pycode{
+\begin{pyc}
 from sympy import *
 x = symbols('x')
 print('\\begin{tabular}{|l|l|}\\hline')
@@ -47,18 +47,18 @@ for func in func_list:
 	print('\\rule[-4mm]{0pt}{10mm}',end='')
 	print('${:s}$&${:s}$\\\\ \\hline'.format(d_str, i_str))
 print('\\end{tabular}')
-/code}\vspace{5mm}
+\end{pyc}\vspace{5mm}
 
 	\item antlr4はLL構文解析に基づくparser generatorである\\
-		\pyprn{'antlr4はLL構文解析に基づくparser generatorである'/prn} \vspace{5mm}
+		\pyp{'antlr4はLL構文解析に基づくparser generatorである'/pyp} \vspace{5mm}
 		
 	\item 
-\pycode{
+\begin{pyc}
 num = 10
 print('\'日本語 \'を',num,'回表示します\\\\ \\vspace{3mm} ')
 for i in range(num):
 	print('日本語~',end='')
-/code} 		
+\end{pyc} 		
 		 
 	\end{enumerate}
      

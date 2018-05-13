@@ -13,29 +13,34 @@ import subprocess
 import argparse
 import re
 
-version = '1.0'
+version = '1.1'
 DEFAULT_SEP = '#####ctx#####'
+
+# PYCODE : '\\begin{pyc}' .*? '\\end{pyc}' ;
+# PYPRN  : '\\pyp{' .*? '/pyp}'  ;
+PYCODE_left_len = len('\\begin{pyc}')
+PYCODE_right_len = len('\\end{pyc}')
+PYPRN_left_len = len('\\pyp{')
+PYPRN_right_len = len('/pyp}')
 
 class ExtractPyCode(PyEmbInTxtListener):
     def __init__(self, sep):
         super().__init__()
         self.sep = sep
         self.pycode = ''
-        
-    def enterPycd(self, ctx):
+    
+    def enterPyc(self, ctx):
         startIndex = ctx.start.tokenIndex
-        pycode = "print(\'" + self.sep + "\')\n" + "print(" + str(startIndex) + ")\n"+ "print(\'" + self.sep + "\')\n" + ctx.getText()+"\n"
-        pycode = pycode.replace('\\pycode{','')
-        pycode = pycode.replace('/code}','')
-        self.pycode += pycode        
-      
+        ctx_getText = ctx.getText()[PYCODE_left_len: -PYCODE_right_len:]
+        pycode = "print(\'" + self.sep + "\')\n" + "print(" + str(startIndex) + ")\n"+ "print(\'" + self.sep + "\')\n" + ctx_getText + "\n"
+        self.pycode += pycode       
         
-    def enterPypr(self, ctx):
+    def enterPyp(self, ctx):
         startIndex = ctx.start.tokenIndex
-        pycode = "print(\'" + self.sep + "\')\n" + "print(" + str(startIndex) + ")\n"+ "print(\'" + self.sep + "\')\n" + "print(" + str(ctx.getText())+')\n'
-        pycode = pycode.replace('\\pyprn{','')
-        pycode = pycode.replace('/prn}','')
+        ctx_getText = ctx.getText()[PYPRN_left_len: -PYPRN_right_len:]
+        pycode = "print(\'" + self.sep + "\')\n" + "print(" + str(startIndex) + ")\n"+ "print(\'" + self.sep + "\')\n" + "print(" + ctx_getText + ')\n'
         self.pycode += pycode
+        
 
 def cut_CPLF(strg):
     result = strg
@@ -45,8 +50,7 @@ def cut_CPLF(strg):
     if len(result) < 2: return result
     if result[-2:] == '\r\n':
         result = result[:-2]
-    return result
-        
+    return result        
     
 
 def run_python(filename, sep):    
@@ -67,8 +71,7 @@ def run_python(filename, sep):
             value = cut_CPLF(result_list[2*i+2])
         result_dic[int(result_list[2*i+1][2:-2:])] = value
     
-    return result_dic
-    
+    return result_dic    
     
            
 def main(file_name, sep, file_list):    

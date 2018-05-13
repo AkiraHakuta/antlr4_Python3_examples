@@ -150,25 +150,7 @@ class PyEmbInTxtParser ( Parser ):
 
 
 
-    class PycdContext(PyContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PyEmbInTxtParser.PyContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def PYCODE(self):
-            return self.getToken(PyEmbInTxtParser.PYCODE, 0)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPycd" ):
-                listener.enterPycd(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPycd" ):
-                listener.exitPycd(self)
-
-
-    class PyprContext(PyContext):
+    class PypContext(PyContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a PyEmbInTxtParser.PyContext
             super().__init__(parser)
@@ -178,12 +160,30 @@ class PyEmbInTxtParser ( Parser ):
             return self.getToken(PyEmbInTxtParser.PYPRN, 0)
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPypr" ):
-                listener.enterPypr(self)
+            if hasattr( listener, "enterPyp" ):
+                listener.enterPyp(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPypr" ):
-                listener.exitPypr(self)
+            if hasattr( listener, "exitPyp" ):
+                listener.exitPyp(self)
+
+
+    class PycContext(PyContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PyEmbInTxtParser.PyContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def PYCODE(self):
+            return self.getToken(PyEmbInTxtParser.PYCODE, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPyc" ):
+                listener.enterPyc(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPyc" ):
+                listener.exitPyc(self)
 
 
 
@@ -196,13 +196,13 @@ class PyEmbInTxtParser ( Parser ):
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [PyEmbInTxtParser.PYCODE]:
-                localctx = PyEmbInTxtParser.PycdContext(self, localctx)
+                localctx = PyEmbInTxtParser.PycContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
                 self.state = 12
                 self.match(PyEmbInTxtParser.PYCODE)
                 pass
             elif token in [PyEmbInTxtParser.PYPRN]:
-                localctx = PyEmbInTxtParser.PyprContext(self, localctx)
+                localctx = PyEmbInTxtParser.PypContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
                 self.state = 13
                 self.match(PyEmbInTxtParser.PYPRN)

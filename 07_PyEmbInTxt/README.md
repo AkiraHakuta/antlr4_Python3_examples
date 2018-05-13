@@ -123,6 +123,28 @@ PyEmbInTxt creates 'example_latex.tex'.
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_md.md'.
 ```
+
+#### ex4_math_exercise  
+How to make math exercises using PyEmbInTxt and  antlr4_tex2sym.  
+`> pip install sympy`  
+download  [antlr4_tex2sym](https://github.com/AkiraHakuta/antlr4_tex2sym)  
+set antlr4_tex2sym path in math_mod.py.    
+install pdflatex.exe ( included in [TeX Live](http://www.tug.org/texlive/) , [W32TeX](http://w32tex.org/index.html) )    
+
+```
+> python.exe C:\.....\07_PyEmbInTxt\pyEmbInTxt.py math_exersise.texpy
+This is PyEmbInTxt version 1.1.
+PyEmbInTxt creates 'math_exersise.tex'.
+```
+
+```
+> pdflatex.exe -synctex=1 -interaction=nonstopmode math_exersise.tex
+```
+
+If you use text editor [SciTE](https://www.scintilla.org/SciTE.html)  , save latexpy.properties in C:\...\wscite363\wscite.   
+set  07_PyEmbInTxt path in  latexpy.properties.   
+
+
 #### Command  line option
 
 ```
@@ -162,6 +184,14 @@ Copyright (c) 2018 Akira Hakuta
 Released under the MIT license  
 <https://opensource.org/licenses/mit-license.php>  
 
+### Change log
+##### version 1.0 (2018/04/29)
+
+##### version 1.1 (2018/05/13)
+
+- Changed `\pycode{..../code}` to `\begin{pyc}....\end{pyc} (latex style)`
+- Changed `\pyprn{...../prn}` to `\pyp{...../pyp}`
+- Added   ex4_math_exercise (How to make math exercises using PyEmbInTxt and  antlr4_tex2sym)
 
 
 *******
@@ -283,6 +313,15 @@ Released under the MIT license
     この例は GitHub に従っています。   
     特に、数式の表記に違いがあるようです。  
     他の方言を使う場合は、適宜変更して下さい。  
+
+- ex4_math_exercise
+    高校数学演習問題の作成例です。  
+     [SciTE](https://www.scintilla.org/SciTE.html) を使うと、かなり快適に使うことができます。  
+    (`latexpy.properties`  PDF reader は [Sumatra](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) を使う設定にしています)     
+    答え ( SymPy の出力結果 ) は問題を作る参考、と考えています。  
+
+    `ans = 0` とすると、white で出力、答えが消えます。  
+
 
 - class  TokenStreamRewriter  
   Python のコードはどうもうまく動きません。  
