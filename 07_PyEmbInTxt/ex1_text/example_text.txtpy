@@ -1,0 +1,7 @@
+///* python.exe pyEmbInTxt.py ex1_text\example_text.txtpy 
+This is COMMENT.
+*///
+example_text \begin{pyc}year=1901\end{pyc} ///This is LINE_COMMENT. \begin{pyc}year=2018\end{pyc} 
+
+Question: What century is the year \begin{pyc}print(year)\end{pyc} in?
+Answer  : It is the \pyp{(year-1)//100 + 1 /pyp}th century.

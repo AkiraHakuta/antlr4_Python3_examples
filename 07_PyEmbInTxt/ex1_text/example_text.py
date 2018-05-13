@@ -1,0 +1,12 @@
+print('#####ctx#####')
+print(15)
+print('#####ctx#####')
+year=1901
+print('#####ctx#####')
+print(56)
+print('#####ctx#####')
+print(year)
+print('#####ctx#####')
+print(83)
+print('#####ctx#####')
+print((year-1)//100 + 1 )
