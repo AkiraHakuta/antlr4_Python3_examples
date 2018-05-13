@@ -306,7 +306,7 @@ Released under the MIT license
   > python.exe pyEmbInTxt.py ex2_latex\test2.texpy
   > pdflatex.exe -synctex=1 -interaction=nonstopmode test2.tex
   ```
-- ex3 example\_markdown   
+- ex3 \_markdown   
     Markdown の使用例です。  
     数式処理 SymPy を使っています。  
     関心のない方は、その部分を削除して下さい。  
