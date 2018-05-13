@@ -142,7 +142,7 @@ PyEmbInTxt creates 'math_exersise.tex'.
 ```
 
 If you use text editor [SciTE](https://www.scintilla.org/SciTE.html)  , save latexpy.properties in C:\...\wscite363\wscite.   
-set  07_PyEmbInTxt path in  latexpy.properties.   
+Set  07_PyEmbInTxt path in  latexpy.properties.   
 Add `import latexpy` in SciTEGlobal.properties.  
 
 
