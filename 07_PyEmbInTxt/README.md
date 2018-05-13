@@ -35,16 +35,16 @@ download Python3 and `> pip install antlr4-python3-runtime `.
 
 ## example
 
-#### ex1 example\_text    
+#### ex1\_text    
 
 ```
-> python.exe pyEmbInTxt.py ex1\example_text.txtpy
+> python.exe pyEmbInTxt.py ex1_text\example_text.txtpy
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_text.txt'.
 ```
 example_text.txtpy  
 ```
-///* python.exe pyEmbInTxt.py ex1\example_text.txtpy 
+///* python.exe pyEmbInTxt.py ex1_text\example_text.txtpy 
 This is COMMENT.
 *///
 example_text \pycode{year=1901/code} ///This is LINE_COMMENT. \pycode{year=2018/code} 
@@ -71,7 +71,7 @@ print((year-1)//100 + 1 )
 ```
 
 ```
-> python.exe ex1\example_text.py 
+> python.exe ex1_text\example_text.py 
 #####ctx#####
 15
 #####ctx#####
@@ -98,12 +98,12 @@ Answer  : It is the 20th century.
 
 
 
-####  ex2 example\_latex
+####  ex2\_latex
 
 `> pip install sympy`  
 install pdflatex.exe ( included in [TeX Live](http://www.tug.org/texlive/) , [W32TeX](http://w32tex.org/index.html) )  
 ```
-> python.exe pyEmbInTxt.py ex2\example_latex.texpy
+> python.exe pyEmbInTxt.py ex2_latex\example_latex.texpy
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_latex.tex'.
 > Exit code: 0    Time: 2.024
@@ -115,11 +115,11 @@ PyEmbInTxt creates 'example_latex.tex'.
 ```
 'pdflatex.exe' creates  example\_latex.pdf   
 
-#### ex3 example\_markdown
+#### ex3 \_markdown
 
 `> pip install sympy`
 ```
-> python.exe pyEmbInTxt.py ex3\example_md.pymd
+> python.exe pyEmbInTxt.py ex3_markdown\example_md.pymd
 This is PyEmbInTxt version 1.0.
 PyEmbInTxt creates 'example_md.md'.
 ```
