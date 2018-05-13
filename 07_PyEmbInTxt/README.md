@@ -210,7 +210,7 @@ Released under the MIT license
   Python が入っていなければ、    
   download [python3](https://www.python.org/downloads/) and `> pip install antlr4-python3-runtime `     
 
-- text file  ex1\example_text.txtpy を例として、説明します。  
+- text file  ex1_text\example_text.txtpy を例として、説明します。  
   ファイル名の拡張子は txt に py を挿入した文字列にして下さい。    
   位置はどこでも構いません。    
   PyEmbInTxt は py を削除したファイル example_text.txt を作ります。   
@@ -230,7 +230,7 @@ Released under the MIT license
      既に、生成した lexer, parser, ... がこの folder の中に入っていますので、  
      PyEmbInTxt.g4 を変更するのでなければ、この操作は必要ありません。    
 
-  (2)  `> python.exe pyEmbInTxt.py ex1\example_text.txtpy`   
+  (2)  `> python.exe pyEmbInTxt.py ex1_text\example_text.txtpy`   
   を実行すると、中間ファイル example_text.py が生成されます。  
   例えば  
 
@@ -258,7 +258,7 @@ Released under the MIT license
      ここでは、class  TokenStreamRewriter で Token Stream のコピーを作り、置き換えます。  
      text file example_text.txt  を作って、処理終了！  
 
-- ex2 example\_latex  
+- ex2\_latex  
   LaTeX の使用例です。  
     数式処理 SymPy を使っています。  
     関心のない方は、その部分を削除して下さい。  
@@ -303,7 +303,7 @@ Released under the MIT license
   \end{document}
   ```
   ```
-  > python.exe pyEmbInTxt.py ex2\test2.texpy
+  > python.exe pyEmbInTxt.py ex2_latex\test2.texpy
   > pdflatex.exe -synctex=1 -interaction=nonstopmode test2.tex
   ```
 - ex3 example\_markdown   
