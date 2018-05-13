@@ -143,6 +143,7 @@ PyEmbInTxt creates 'math_exersise.tex'.
 
 If you use text editor [SciTE](https://www.scintilla.org/SciTE.html)  , save latexpy.properties in C:\...\wscite363\wscite.   
 set  07_PyEmbInTxt path in  latexpy.properties.   
+Add `import latexpy` in SciTEGlobal.properties.  
 
 
 #### Command  line option
@@ -317,8 +318,10 @@ Released under the MIT license
 - ex4_math_exercise
     高校数学演習問題の作成例です。  
      [SciTE](https://www.scintilla.org/SciTE.html) を使うと、かなり快適に使うことができます。  
-答え(SymPy の出力結果)は問題を作る参考、と考えています。  
-`ans = 0` とすると、答えが消えます。(white で出力)  
+    (`latexpy.properties`  PDF reader は [Sumatra](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) を使う設定にしています)     
+    答え ( SymPy の出力結果 ) は問題を作る参考、と考えています。  
+
+    `ans = 0` とすると、white で出力、答えが消えます。  
 
 
 - class  TokenStreamRewriter  
