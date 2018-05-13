@@ -1,5 +1,0 @@
-
-example_text  
-
-Question: What century is the year 1301 in?
-Answer  : It is the 14th century.
