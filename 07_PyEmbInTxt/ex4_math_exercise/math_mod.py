@@ -2,7 +2,7 @@
 antlr4_tex2sym_Path = r'C:.....\antlr4_tex2sym-master'
 import sys
 sys.path.append(antlr4_tex2sym_Path)
-from antlr4_tex2sym2 import tex2sym, mylatex
+from antlr4_tex2sym import tex2sym, mylatex
 
 
 from sympy import *
