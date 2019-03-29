@@ -3,19 +3,19 @@
 [ANTLR4](http://www.antlr.org) is a parser generator.  
 
 ## Install (Windows)
-- [python3](https://www.python.org/downloads/)
+- [Python3](https://www.python.org/downloads/)
 
-- antlr4 python3 runtime (4.7.1)  
-` pip install antlr4-python3-runtime`
- - antlr-4.7.1-complete.jar ([Complete ANTLR 4.7.1 Java binaries jar](http://www.antlr.org/download.html))  
-make C:\Javalib and 
-save antlr-4.7.1-complete.jar in C:\Javalib.  
+- antlr4 python3 runtime (4.7.2)  
+`> pip install antlr4-python3-runtime`
+ - antlr-4.7.2-complete.jar ([Complete ANTLR 4.7.2 Java binaries jar](http://www.antlr.org/download.html))  
+Make C:\Javalib and 
+save antlr-4.7.2-complete.jar in C:\Javalib.  
 - Java
 
 ## first example (simpleExpr1)   
 
 SimpleExpr1.g4
-```
+```antlr
 grammar SimpleExpr1;
 
 // parser rules
@@ -24,7 +24,7 @@ stat : expr ;
 expr : <assoc=right> expr EXPO expr
      | expr MULT expr
      | expr ADD  expr
-     | INT           
+     | INT
      ;
 
 // lexer rules
@@ -34,16 +34,48 @@ ADD  : '+' ;
 INT : [0-9]+ ;
 WS : [ \t\n\r]+ -> skip ;
 ```
-Open Command Prompt and run bin/antlr4env.bat.  
-The following command creates Python lexer and parser.
 
+#### How to create lexer and parser.  
+
+##### using command prompt  
+ Open Command Prompt and run bin/antlr4env.bat.  
+The following command creates Python lexer and parser.
 ```
 > cd C:\...\simpleExpr1
 > antlr4py3 SimpleExpr1.g4
-```
+```  
+##### using [Sublime Text 3](https://www.sublimetext.com/3)  
+Tools -> Command Palette... -> Package Control: Install Package -> ANTLR syntax highlight  
+Save Antlr4py3.sublime-build in User  
+Antlr4py3.sublime-build  
+```json
+{
+  "cmd":["java.exe", "-jar", "C:\\Javalib\\antlr-4.7.2-complete.jar", "-Dlanguage=Python3", "$file"],
+  "selector": "source.antlr",
+  "file_regex": "^error\\([0-9]*\\):\\s(.*?):([0-9]*):?([0-9]*):?\\s(.*)",
+  "variants":[
+      {
+        "name": "no-listener -visitor",
+        "cmd": ["java.exe", "-jar", "C:\\Javalib\\antlr-4.7.2-complete.jar", "-Dlanguage=Python3", "-no-listener", "-visitor", "$file"]
+      },
+      {
+        "name": "o gen",
+        "cmd": ["java.exe", "-jar", "C:\\Javalib\\antlr-4.7.2-complete.jar", "-Dlanguage=Python3", "-o", "gen", "$file"]
+      },
+      {
+        "name": "visitor -no-listener -o gen",
+        "cmd": ["java.exe", "-jar", "C:\\Javalib\\antlr-4.7.2-complete.jar", "-Dlanguage=Python3", "-visitor", "-no-listener", "-o", "gen", "$file"],
+      }
+    ]
+}
+```  
+Open SimpleExpr1.g4  
+Tools ->Build System -> Automatic  
+Tools -> Build With... -> Antlr4py3  
+
 test_SimpleExpr1.py  
 
-```  
+```python
 from antlr4 import *
 from SimpleExpr1Lexer import SimpleExpr1Lexer
 from SimpleExpr1Parser import SimpleExpr1Parser
@@ -91,6 +123,7 @@ test1.expr
 ```  
 10+123*3
 ```
+Open Command Prompt  
 ```
 > python.exe test_SimpleExpr1.py
 input_stream:
@@ -111,7 +144,8 @@ tree:
       (expr 
          (expr 123) * 
          (expr 3))))
-```
+```  
+
 ## Notes
 (1) The Definitive ANTLR 4 Reference (by Terence Parr) eBook, Paper   
 (2) [py3antlr4book](https://github.com/jszheng/py3antlr4book)  
