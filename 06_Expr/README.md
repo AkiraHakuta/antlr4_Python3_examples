@@ -2,7 +2,7 @@
 ## Expr  
 
 Expr.g4
-```
+```antlr
 grammar Expr;
 
 prog:   stat+ ; 
@@ -38,7 +38,7 @@ The following command creates Python lexer and parser.
 > antlr4py3 Expr.g4 -no-listener -visitor
 ```
 test_Expr.py
-```
+```python
 from antlr4 import *
 
 from ExprLexer import ExprLexer
@@ -160,7 +160,7 @@ xx=+50-8*((5+4)-3)
 a10^2*xx
 
 ```
-
+Open Command Prompt  
 ```
 > python.exe test_SimpleExpr5.py
 input_stream:
