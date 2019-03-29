@@ -81,7 +81,7 @@ test1.expr
 ```  
 10+123*3
 ```
-
+Open Command Prompt  
 ```
 > python.exe test_SimpleExpr1.py
 tokens:
