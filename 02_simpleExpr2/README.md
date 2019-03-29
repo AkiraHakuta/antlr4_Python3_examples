@@ -2,7 +2,7 @@
 ## simpleExpr2  
 
 SimpleExpr2.g4
-```
+```antlr
 grammar SimpleExpr2;
 
 stat : expr ;
@@ -27,7 +27,7 @@ The following command creates Python lexer and parser.
 > antlr4py3 SimpleExpr2.g4
 ```
 test_SimpleExpr2.py
-```
+```python
 from antlr4 import *
 
 from SimpleExpr2Lexer import SimpleExpr2Lexer
@@ -111,7 +111,7 @@ test1.expr
 ```  
 10+123*3
 ```
-
+Open Command Prompt  
 ```
 > python.exe test_SimpleExpr2.py
 input_stream:
@@ -139,7 +139,7 @@ SimpleExpr2.g4
 各 alternative に Label を付けることができます。  
 付ける場合は、その parser rule のすべての alternative に付けなければなりません。  
 
-```
+```antlr
 expr : <assoc=right> expr EXPO expr # Expo
      | expr MULT expr               # Mult
      | expr ADD  expr               # Add
@@ -149,7 +149,7 @@ expr : <assoc=right> expr EXPO expr # Expo
 
 SimpleExpr2Listener.py (下記)  が生成されます。  
 
-```
+```python
 # This class defines a complete listener for a parse tree produced by SimpleExpr2Parser.
 class SimpleExpr2Listener(ParseTreeListener):
 
