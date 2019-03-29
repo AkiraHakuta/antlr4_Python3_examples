@@ -35,16 +35,16 @@ INT : [0-9]+ ;
 WS : [ \t\n\r]+ -> skip ;
 ```
 
-#### How to create lexer and parser.  
+### How to create lexer and parser.  
 
-##### using command prompt  
+#### using command prompt  
  Open Command Prompt and run bin/antlr4env.bat.  
 The following command creates Python lexer and parser.
 ```
 > cd C:\...\simpleExpr1
 > antlr4py3 SimpleExpr1.g4
 ```  
-##### using [Sublime Text 3](https://www.sublimetext.com/3)  
+#### using [Sublime Text 3](https://www.sublimetext.com/3)  
 Tools -> Command Palette... -> Package Control: Install Package -> ANTLR syntax highlight  
 Save Antlr4py3.sublime-build in User  
 Antlr4py3.sublime-build  
