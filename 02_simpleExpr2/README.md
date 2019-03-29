@@ -187,7 +187,7 @@ walker.walk(calc, tree)
 
 class SimpleExpr2Listener を継承して、次のようなクラスを作ります。  
 
-```
+```python
 class Calc(SimpleExpr2Listener):
     def __init__(self):
         super().__init__()
