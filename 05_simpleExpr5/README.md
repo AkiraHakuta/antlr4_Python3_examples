@@ -2,7 +2,7 @@
 ## simpleExpr5  
 
 SimpleExpr5.g4
-```
+```antlr
 grammar SimpleExpr5;
 
 @parser::header{
@@ -46,7 +46,7 @@ The following command creates Python lexer and parser.
 > antlr4py3 SimpleExpr5.g4 
 ```
 test_SimpleExpr5.py
-```
+```python
 from antlr4 import *
 
 from SimpleExpr5Lexer import SimpleExpr5Lexer
@@ -93,7 +93,7 @@ test1.expr
 ```  
 10+123*3
 ```
-
+Open Command Prompt  
 ```
 > python.exe test_SimpleExpr5.py
 input_stream:
@@ -120,7 +120,7 @@ class SimpleExpr5Parser ( Parser ) に code を挿入することができます
 
  SimpleExpr5Parser.py
 
-```
+```python
 # Generated from SimpleExpr5.g4 by ANTLR 4.7.1
 # encoding: utf-8
 from antlr4 import *
@@ -210,7 +210,7 @@ class SimpleExpr5Parser ( Parser ):
 でも、それが良いのか否かは別問題です。  
 複雑な grammar はとても読みにくいものです。  
 
-```
+```python
 .....
 token_stream = CommonTokenStream(lexer)
 parser = SimpleExpr5Parser(token_stream)
