@@ -2,7 +2,7 @@
 ## simpleExpr4  
 
 SimpleExpr4.g4
-```
+```antlr
 grammar SimpleExpr4;
 
 stat locals[result] // or returns[result]
@@ -29,7 +29,7 @@ The following command creates Python lexer and parser.
 > antlr4py3 SimpleExpr4.g4
 ```
 test_SimpleExpr4.py
-```
+```python
 from antlr4 import *
 
 from SimpleExpr4Lexer import SimpleExpr4Lexer
@@ -106,7 +106,7 @@ test1.expr
 ```  
 10+123*3
 ```
-
+Open Command Prompt  
 ```
 > python.exe test_SimpleExpr4.py
 input_stream:
@@ -131,7 +131,7 @@ result =  379
 
 下記 (SimpleExpr4.g4)  のように、各 parser rule に locals[result],  locals[value] を挿入すると、    
 
-```
+```antlr
 stat locals[result] // or returns[result]
     : expr ;
 
@@ -145,7 +145,7 @@ expr locals[value] // or returns[value]
 
 class SimpleExpr4Parser ( Parser ) に インスタンス変数 が挿入されます。  
 
-```
+```python
 class StatContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -165,7 +165,7 @@ class ExprContext(ParserRuleContext):
 
 これを使って、計算経過・結果を次のようなプログラムで保存します。  
 
-```
+```python
 class Calc(SimpleExpr4Listener):
     def __init__(self):
         super().__init__()
