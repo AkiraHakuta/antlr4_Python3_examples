@@ -2,7 +2,7 @@
 ## simpleExpr1  
 
 SimpleExpr1.g4
-```
+```antlr
 grammar SimpleExpr1;
 // parser rules
 stat : expr ;
@@ -28,7 +28,7 @@ The following command creates Python lexer and parser.
 > antlr4py3 SimpleExpr1.g4
 ```
 test_SimpleExpr1.py
-```
+```python
 from antlr4 import *
 from SimpleExpr1Lexer import SimpleExpr1Lexer
 from SimpleExpr1Parser import SimpleExpr1Parser
