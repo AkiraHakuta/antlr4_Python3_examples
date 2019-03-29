@@ -179,7 +179,7 @@ class SimpleExpr3Visitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 ```
 class SimpleExpr3Visitor を継承して、次のようなクラスを作ります。  
-```
+```python
 class Calc(SimpleExpr3Visitor):
     def __init__(self):
         super().__init__()
