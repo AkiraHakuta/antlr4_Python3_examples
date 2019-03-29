@@ -2,7 +2,7 @@
 ## simpleExpr3  
 
 SimpleExpr3.g4
-```
+```antlr
 grammar SimpleExpr3;
 
 stat : expr ;
@@ -27,7 +27,7 @@ The following command creates Python lexer and parser.
 > antlr4py3 SimpleExpr3.g4 -no-listener -visitor
 ```
 test_SimpleExpr3.py
-```
+```python
 from antlr4 import *
 
 from SimpleExpr3Lexer import SimpleExpr3Lexer
@@ -106,7 +106,7 @@ test1.expr
 ```  
 10+123*3
 ```
-
+Open Command Prompt  
 ```
 > python.exe test_SimpleExpr3.py
 input_stream:
@@ -135,7 +135,7 @@ result= 379
 SimpleExpr3.g4    
 各 alternative に Label を付けます。  
 
-```
+```antlr
 expr : <assoc=right> expr EXPO expr # Expo
      | expr MULT expr               # Mult
      | expr ADD  expr               # Add
@@ -149,7 +149,7 @@ expr : <assoc=right> expr EXPO expr # Expo
 
 SimpleExpr3Visitor.py (下記)  が生成されます。
 
-```
+```python
 # This class defines a complete generic visitor for a parse tree produced by SimpleExpr3Parser.
 
 class SimpleExpr3Visitor(ParseTreeVisitor):
