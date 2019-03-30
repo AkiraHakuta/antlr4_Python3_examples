@@ -44,7 +44,7 @@ The following command creates Python lexer and parser.
 > cd C:\...\simpleExpr1
 > antlr4py3 SimpleExpr1.g4
 ```  
-#### using [Sublime Text 3](https://www.sublimetext.com/3)  
+#### using [Sublime Text 3](https://www.sublimetext.com)  
 Tools -> Command Palette... -> Package Control: Install Package -> ANTLR syntax highlight  
 Save Antlr4py3.sublime-build in User  
 Antlr4py3.sublime-build  
