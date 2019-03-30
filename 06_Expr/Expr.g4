@@ -1,4 +1,4 @@
-// antlr4py3 Expr.g4 -no-listener -visitor
+// antlr4py3 -no-listener -visitor Expr.g4
 
 grammar Expr;
 
