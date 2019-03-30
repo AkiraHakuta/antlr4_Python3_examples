@@ -66,7 +66,7 @@ Antlr4py3.sublime-build
         "name": "visitor -no-listener -o gen",
         "cmd": ["java.exe", "-jar", "C:\\Javalib\\antlr-4.7.2-complete.jar", "-Dlanguage=Python3", "-visitor", "-no-listener", "-o", "gen", "$file"],
       }
-    ]
+  	]
 }
 ```  
 Open SimpleExpr1.g4  
